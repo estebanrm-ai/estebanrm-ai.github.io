@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esteban Ramírez · Data & Software</title>
+  <meta name="description" content="Portafolio de Esteban Ramírez Montoya — Ingeniería en Software con enfoque en datos y automatización. Medellín, Colombia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="#inicio" class="nav-logo">estebanrm<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menú" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#proyectos">Proyectos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">
+        <span class="dot"></span> Medellín, Colombia · Disponible para prácticas
+      </p>
+      <h1 class="hero-name">Esteban<br/>Ramírez<span class="accent">.</span></h1>
+      <p class="hero-role">Ingeniería en Software <span class="separator">·</span> Datos & Automatización</p>
+      <p class="hero-bio">
+        Estudiante de ingeniería en software en el Tecnológico de Antioquia,
+        con enfoque en datos y automatización. Construyo soluciones donde el
+        código y los datos se convierten en decisiones reales.
+      </p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn-secondary">Contacto</a>
+      </div>
+      <div class="hero-stack">
+        <span class="stack-label">Stack actual</span>
+        <div class="stack-tags">
+          <span>Python</span><span>pandas</span><span>SQL</span>
+          <span>Power BI</span><span>Git</span><span>HTML/CSS/JS</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="code-block">
+        <div class="code-bar">
+          <span class="cb-dot r"></span>
+          <span class="cb-dot y"></span>
+          <span class="cb-dot g"></span>
+          <span class="cb-file">query.sql</span>
+        </div>
+        <pre class="code-content" id="codeTyping"></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Trabajo</p>
+        <h2 class="section-title">Proyectos</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-top">
+            <div>
+              <span class="project-status design">En diseño</span>
+              <h3 class="project-name">SIGE-TdeA</h3>
+              <p class="project-full">Sistema de Información para la Gestión Eficiente de la Energía</p>
+            </div>
+          </div>
+          <p class="project-desc">
+            Sistema de gestión energética basado en facturas de EPM e inventario de equipos.
+            Muestra evolución del consumo, genera resúmenes automáticos, emite alertas ante
+            consumos inusuales y proyecta tendencias para apoyar decisiones de uso eficiente
+            de la energía en el TdeA.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>pandas</span><span>statsmodels</span>
+            <span>MVC</span><span>matplotlib</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/estebanrm-ai" target="_blank" rel="noopener" class="link-gh">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-status wip">En construcción</span>
+            <h3 class="project-name">Pipeline energético</h3>
+          </div>
+          <p class="project-desc">
+            Pipeline automatizado con datos públicos del UPME. Extrae, transforma
+            y carga datos de consumo energético colombiano, genera alertas y
+            actualiza un dashboard en Power BI diariamente.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>SQL</span><span>Power BI</span><span>schedule</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/estebanrm-ai" target="_blank" rel="noopener" class="link-gh">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card coming">
+          <p class="coming-label">Próximamente</p>
+          <p class="coming-desc">Más proyectos en desarrollo durante las próximas semanas.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Stack</p>
+        <h2 class="section-title">Habilidades</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Datos & Análisis</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Python</span><span class="skill-level funcional">Funcional</span></li>
+            <li><span class="skill-name">pandas</span><span class="skill-level aprendiendo">Aprendiendo</span></li>
+            <li><span class="skill-name">SQL</span><span class="skill-level aprendiendo">Aprendiendo</span></li>
+            <li><span class="skill-name">Power BI</span><span class="skill-level aprendiendo">Aprendiendo</span></li>
+            <li><span class="skill-name">statsmodels</span><span class="skill-level funcional">Funcional</span></li>
+            <li><span class="skill-name">matplotlib</span><span class="skill-level funcional">Funcional</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Automatización</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Python scripts</span><span class="skill-level funcional">Funcional</span></li>
+            <li><span class="skill-name">Power Automate</span><span class="skill-level aprendiendo">Aprendiendo</span></li>
+            <li><span class="skill-name">schedule / cron</span><span class="skill-level aprendiendo">Aprendiendo</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Ingeniería & Web</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Git / GitHub</span><span class="skill-level funcional">Funcional</span></li>
+            <li><span class="skill-name">HTML & CSS</span><span class="skill-level solido">Sólido</span></li>
+            <li><span class="skill-name">JavaScript</span><span class="skill-level funcional">Funcional</span></li>
+            <li><span class="skill-name">Arquitectura MVC</span><span class="skill-level funcional">Funcional</span></li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="skills-note">Los niveles son honestos: aprendiendo / funcional / sólido.</p>
+    </div>
+  </section>
+
+  <section class="section" id="sobre-mi">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <p class="section-eyebrow">Contexto</p>
+        <h2 class="section-title">Sobre mí</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          Soy Esteban, estudiante de octavo semestre de ingeniería en software en el
+          Tecnológico de Antioquia. Me muevo entre dos mundos; 
+          el análisis de datos y el desarrollo frontend. Me interesa construir cosas que
+          sean útiles, no solo funcionales.
+        </p>
+        <p>
+          Actualmente estoy buscando mis primeras prácticas profesionales en un equipo
+          donde pueda aportar desde el primer día y seguir aprendiendo con propósito.
+          Trabajo bien con autonomía, aprendo rápido y no le tengo miedo a los problemas.
+        
+        </p>
+        <p>
+          Fuera del código me interesan la música, la historia y entender cómo funcionan
+          los sistemas, sean técnicos, humanos o de otro tipo.
+        </p>
+        <div class="about-links">
+          <a href="https://www.linkedin.com/in/esteban-ramirez-montoya-" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/estebanrm-ai" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contacto">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <p class="section-eyebrow">Hablemos</p>
+        <h2 class="section-title">Contacto</h2>
+      </div>
+      <p class="contact-intro">
+        ¿Tienes una oportunidad de prácticas, un proyecto o simplemente quieres conectar?
+        Escríbeme directamente.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:esteban.ra2000@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>esteban.ra2000@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/esteban-ramirez-montoya-" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">in</span>
+          <span>linkedin.com/in/esteban-ramirez-montoya</span>
+        </a>
+        <a href="https://github.com/estebanrm-ai" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">gh</span>
+          <span>github.com/estebanrm-ai</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Esteban Ramírez Montoya · Medellín, Colombia · <span id="year"></span></p>
+    <p class="footer-sub">Construido con HTML, CSS y JS · Alojado en GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
